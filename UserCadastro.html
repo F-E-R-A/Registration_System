@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro de Usuários</title>
+        <link rel="stylesheet" href="Style.css"/>
+        <script src="https://kit.fontawesome.com/365c91b254.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </head>
+    <body id="body_cadastr">
+        <form enctype="multipart/form-data" method="POST" action="Cadastro.php">
+            <div id="div1">
+                <h1 id="Title">Novo Usuário</h1>
+                <div class="div2">
+                    <img id="ImgPerfil" src="Images/camera.png" height="30px" width="30px" alt="Imagem Indisponível."/>
+                </div>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <div>
+                    <input id="Findfile" name="Findfile" type="file"/>
+                </div>
+                <br/>
+                <div class="divCenter1">
+                    <input class="IMP" type="text" name="N_user" placeholder="Novo usuário" required/>
+                    <i class="fa-solid fa-user" ariel-hidden="true"></i>
+                </div>
+                <br/>
+                <div class="divCenter2">
+                    <input class="IMP" type="password" name="N_key" placeholder="Nova senha" required/>
+                    <i class="fa-solid fa-key"></i>
+                </div>
+                <br/>
+                <div class="divCenter3">
+                    <input class="IMP" type="email" name="N_email" placeholder="seuemail@aqui.com" required/>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <br/>
+                <button id="bt1" type="submit" >Cadastrar</button>
+            </div>
+        </form>
+    </body>
+</html>

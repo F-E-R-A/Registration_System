@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="Style.css"/>
+    <script src="https://kit.fontawesome.com/365c91b254.js" crossorigin="anonymous"></script>
+</head>
+<body id="body_home">
+    <ul id="menu_h">
+        <li><a href="HomeP.html">Home</a></li>
+        <li><a href="#">Quem Somos</a></li>
+        <li><a href="#">Contatos</a></li>
+        <li><a href="#">Sugestões</a></li>
+        <li><input class="input2" id="Imp" type="search" placeholder="Procurar..."/></li>
+        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+        <li>
+            <div>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+                <a href="#"><i class="fa-solid fa-door-open"></i></a>
+            </div>
+        </li>
+    </ul>
+    <ul id="abas1">
+        <li><a id="aba1" href="#">Complemento</a></li>
+        <li><a id="aba2" href="#">Meus dados</a></li>
+        <li><a id="aba3" href="#">Alterar senha</a></li>
+    </ul>
+    
+
+    <div id="divForm">
+        <form method="POST" action="Formulario.php">
+            <h2 id="TitleForm">Complete seu cadastro abaixo.<i class="fa-solid fa-book-open"></i></h2>
+            <fieldset id="block1">
+                <legend>Dados Pessoais</legend>
+
+                <label for="Nome">Nome:&nbsp;</label>
+                <input id="Nome" class="IMPForm" type="text" placeholder="Nome completo" required/>
+
+                <label for="User2">Usuário:</label>
+                <input id="User2" class="IMPForm" type="text" placeholder="Usuário"/><br/><br/>
+
+                <label id="cpf" for="CPF">CPF:&nbsp;</label>
+                <input id="CPF" class="IMPForm" type="number" minlength="11" maxlength="12" placeholder="Apenas números" required/>
+                
+                <label for="Data_Nc">Data de Nascimento:&nbsp;&nbsp;</label>
+                <input id="Data_Nc" Classe="IMPForm" type="date"/>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <label for="Sex">Sexo:&nbsp;</label>
+                <select id="Sex" class="IMPForm">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Não declarar">Não declarar</option>
+                </select><br/><br/>
+                <label for="email">E-mail:</label>
+                <input id="email" class="IMPForm" type="email" placeholder="emailaqui@exemplo.com" required/>&nbsp;&nbsp;&nbsp;
+
+                <label for="tel">Telefone:</label>
+                <input id="tel" class="IMPForm" type="tel" minlength="11" maxlength="11"/>
+            </fieldset><br/>
+            <fieldset id="block2">
+                <legend>Endereço</legend>
+
+                <label for="Rua">Tipo:&nbsp;</label>
+                <select id="Rua" class="IMPForm">
+                    <option value="Rua">Rua</option>
+                    <option value="Avenida">Avenida</option>
+                    <option value="Córrego">Córrego</option>
+                    <option value="Estrada">Estrada</option>
+                    <option value="Rodovia">Rodovia</option>
+                    <option value="Outros">Outros</option>
+                </select>
+                <input id="IMPRua" class="IMPForm" type="text"/>&nbsp;&nbsp;&nbsp;
+                <br/><br/>
+                <label for="Logr">Logradouro</label>
+                <select id="Lograd" class="IMPForm">
+                    <option value="Casa">Casa</option>
+                    <option value="Apartamento">Apartamento</option>
+                    <option value="Condomínio">Condomínio</option>
+                    <option value="Fazenda">Fazenda</option>
+                    <option value="Sítio">Sítio</option>
+                    <option value="Outros">Outros</option>
+                </select>
+                <label for="Num">Número:</label>
+                <input id="num" class="IMPForm" type="number"/>
+
+                <label for="bairro">Bairro:</label>
+                <input id="bairro" class="IMPForm" type="text" placeholder="Centro"/><br/><br/>
+
+                <label for="CEP">CEP:</label>
+                <input id="CEP" class="IMPForm" type="number"/>
+
+                <label for="City">Cidade:</label>
+                <input id="City" type="text" class="IMPForm" placeholder="Sua cidade"/>&nbsp;&nbsp;&nbsp;
+
+                <label for="pais">País:</label>
+                <input id="pais" class="IMPForm" type="text">
+            </fieldset><br/>
+            <div id="buttonForm">
+                <button id="bt8" type="">Voltar</button>
+                <button id="bt9" type="reset">Limpar</button>
+                <button id ="bt10" type="submit">Enviar</button>
+            </div>
+        </form>
+        
+    </div>
+
+
+    <section id="Rodape">
+        <div id="sobreaEmpresa">
+            <h3>A Empresa:</h3>
+            <ul id="Ul1">
+                <li>Compromisso com todos;</li>
+                <li>Lealdade e carinho com o clientes.</li>
+                <li>Clareza e postura a todos.</li>
+            </ul>
+        </div>
+        <div id="ContatoEmpresa">
+            <h3>Contatos:</h3>
+            <a href="https://www.instagram.com/" target="_blank"><img src="Images/instagram.png" alt="None"></a>
+            <a href="https://pt-br.facebook.com/" target="_blank"><img src="Images/facebook.png" alt="None"></a>
+            <a href="https://br.linkedin.com/" target="_blank"><img src="Images/linkedin.png" alt="None"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="Images/whatsapp.png" alt="None"></a>           
+        </div>
+        <div id="Endereco">
+            <h3>Endereço:</h3>
+            <ul>
+                <li>Avenida Joaquim Inácio, Nº 1253,</li>
+                <li>Bairro São Tomé,</li>
+                <li>Divinópolis, Minas Gerais, Brasil.</li>
+                <li><a href="https://www.google.com.br/maps/place/Pousada+MW/@-20.1431686,-44.8756694,18z/data=!4m15!1m9!2m8!1zSG90w6lpcw!3m6!1zSG90w6lpcw!2sDivin%C3%B3polis,+MG!3s0xa0a5bc241bce2f:0xf7e939bd5077b17d!4m2!1d-44.8904062!2d-20.1435294!3m4!1s0xa0a53a99d0a6ad:0x35d39bbe75084587!8m2!3d-20.1431685!4d-44.8742127" target="_blank">Localização Google Maps</a></li>
+            </ul>
+        </div>
+        <footer id="ImagemDecorativa">
+            <img src="Images/relacionamento-cliente.webp" alt="None">
+        </footer>
+    </section>
+</body>
+</html>

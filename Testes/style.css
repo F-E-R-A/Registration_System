@@ -1,0 +1,140 @@
+html, body{
+    height: 100%
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+#Cabecalho{
+    text-align: center;
+    background-color: rgb(156, 55, 55);
+    padding: 25px;
+}
+#DivPrincipal{
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: center;
+
+}
+#DV2{
+    padding-top: 60px;
+}
+#TitleAcima h3{
+    position: relative;
+    top: -20px;
+}
+#TitlePrinc p{
+    position: relative;
+     top: -20px;
+}
+#Preço h4{
+    position: relative;
+    top: -20px;
+}
+#PreçoBotao{
+    display: flex;
+    justify-content: center;
+}
+#Preço{
+    position: relative;
+    left: -95px;
+}
+#BTão button{
+    font-size: 16px;
+    position: relative;
+    margin: 28px;
+    height: 45px;
+    width: 180px;
+    background-color:rgb(211, 25, 25);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif
+}
+#CalcFrete{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(178, 189, 141);
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+}
+#CalcFrete h3{
+    position: relative;
+    left: -50px;
+}
+#CalcFrete input{
+    position: relative;
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+#CalcFrete button{
+    position: relative;
+    height: 41px;
+    margin-top: 10px;
+    margin-left: 3px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(71, 173, 141);
+    color: white;
+}
+#ClientContactlabels img{
+    position: relative;
+    top: 24px;
+}
+#ClientContactlabels #label1{
+    position: relative;
+    top: -10px;
+}
+#ClientContactlabels #label2{
+    position: relative;
+    top: -10px;
+    left: 10px;
+}
+#ClientContactlabels select{
+    position: relative;
+    top: -10px;
+}
+#ClientContactlabels input{
+    position: relative;
+    top: -10px;
+}
+#ClientContactlabels #Areaselect{
+    left: 36px;
+    height: 30px;
+    width: 100px;
+    text-align: left;
+}
+#ClientContactlabels #TelNumber{
+    left: 45px;
+    height: 24px;
+    width: 190px;
+}
+#ClientContact #PermitirMensages{
+    position: relative;
+    left: 32px;
+}
+#ClientContact #label3{
+    position: relative;
+    left: 30px;
+    top: -1px;
+}
+#ClientContact #enviarTel{
+    position: relative;
+    left: 30px;
+    height: 30px;
+    width: 90px;
+    background-color: rgb(101, 167, 145);
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+#footer{
+    flex-shrink: 0;
+    text-align: center;
+    position: relative;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    padding: 50px;
+}
